@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Made an IBOutlet to reference the log for the rounded edges
+    @IBOutlet weak var LogoSection: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //In viewDidLoad then call cornerRadius and made them 10
+        LogoSection.layer.cornerRadius = 10
+        LogoSection.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
