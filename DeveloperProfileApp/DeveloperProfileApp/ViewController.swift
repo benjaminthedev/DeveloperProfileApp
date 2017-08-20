@@ -12,12 +12,16 @@ class ViewController: UIViewController {
 
     // Made an IBOutlet to reference the log for the rounded edges
     @IBOutlet weak var LogoSection: UIImageView!
+    @IBOutlet weak var CustomDashBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //In viewDidLoad then call cornerRadius and made them 10
         LogoSection.layer.cornerRadius = 10
         LogoSection.clipsToBounds = true
+        
+        CustomDashBtn.layer.cornerRadius = 10
+        CustomDashBtn.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
