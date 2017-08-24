@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //In viewDidLoad then call cornerRadius and made them 10
+        
         LogoSection.layer.cornerRadius = 10
         LogoSection.clipsToBounds = true
         
